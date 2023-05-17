@@ -1,0 +1,132 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    overflow: hidden;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: rgba(117, 172, 201, 0.5);
+    background-image: radial-gradient(
+        circle at bottom left,
+        rgba(205, 243, 76, 0.9),
+        rgba(205, 243, 76, 0) 70%
+      ),
+      radial-gradient(circle at top left, #f4eb34, #72a7a5, 70%),
+      radial-gradient(circle at center right, rgba(174, 82, 234, 0.8), rgba(174, 82, 234, 0) 50%);
+    background-size: 200% 200%;
+    animation: movement 30s ease infinite alternate-reverse;
+  }
+  
+  @keyframes movement {
+    0% {
+      background-position: 0% 0%;
+    }
+    25% {
+      background-position: 50% 0%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+  
+  main {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  section {
+    width: 20rem;
+    height: 30rem;
+    background: rgba(255, 239, 235, 0.6);
+    backdrop-filter: blur(1rem);
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0.8rem 0.8rem 1.6rem 0 rgba(99, 47, 140, 0.5),
+      -0.8rem -0.8rem 1.6rem 0 rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  section h1 {
+    margin: 0;
+    padding: 0;
+    padding-top: 1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+  
+  section h1 span {
+    font-size: 0.5rem;
+    /* display: inline-block; */
+    width: 4.5rem;
+    color: #009AAF;
+    text-transform: uppercase;
+  }
+  
+  section ul {
+    margin: 0;
+    padding: 0.2em;
+    list-style-type: none;
+    flex-grow: 2;
+    width: 18em;
+    overflow-y: scroll;
+  }
+  
+  ::-webkit-scrollbar {
+    background: transparent;
+  }
+  
+  section ul > li {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+  
+  section form {
+    margin: 0 0 1rem 0;
+    padding: 0;
+    width: 18rem;
+    height: 2rem;
+    display: flex;
+  }
+  
+  section form input[type='text'] {
+    margin: 0;
+    padding: 0 1rem;
+    border: none;
+    height: 2rem;
+    flex-grow: 2;
+    background: white;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border: 0;
+    opacity: 80%;
+    outline: none;
+    width: 100%;
+  }
+  
+  section form > button {
+    padding: 0 0.6rem 0 0.4rem;
+    width: 2rem;
+    background: #72a7a5;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border: 0;
+    opacity: 80%;
+    outline: none;
+    transition: 0.2s;
+    width: 100%;
+  }
+  

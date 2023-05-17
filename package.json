@@ -1,0 +1,29 @@
+{
+  "name": "my-first-chatroom",
+  "version": "1.0.0",
+  "description": "A realtime chatroom",
+  "main": "server.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iBadr49/my-first-chatroom.git"
+  },
+  "author": "A Badr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iBadr49/my-first-chatroom/issues"
+  },
+  "homepage": "https://github.com/iBadr49/my-first-chatroom#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1"
+  }
+}
