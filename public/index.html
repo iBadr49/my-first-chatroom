@@ -4,21 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/script.js" defer></script>
     <title>Minions</title>
   </head>
   <body>
     <main>
-        <section>
-          <h1>Minions <span>Chatroom</span></h1>
-          <ul><hr></ul>
-          <form>
-            <input type="text" autocomplete="off" />
-            <button><span>Send</span></button>
-          </form>
-        </section>
-      </main>
-    <script src="/socket.io/socket.io.js"></script>
-    <script defer src="/script.js"></script>
+      <section>
+        <h1>Minions <span>Chatroom</span></h1>
+        <ul>
+          <hr />
+        </ul>
+        <!-- State messages -->
+        <span class="loading">Berichten aan het inladen...</span>
+        <span class="empty"
+          >Er zijn nog geen berichten hier, typ iets om te kijken of er iemand
+          reageert.</span
+        >
+        <span class="offline"
+          >Er gaat iets mis met de verbinding, we proberen de connectie te
+          herstellen...</span
+        >
+        <form>
+          <input type="text" autocomplete="off" />
+          <button><span>Send</span></button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>

@@ -45,6 +45,28 @@ body {
     justify-content: center;
     align-items: center;
   }
+
+/* ------------------ States */
+span.loading,
+span.empty,
+span.offline {
+  padding: 2rem;
+  font-size: 0.7rem;
+  font-weight: lighter;
+}
+
+span.loading {
+  color: #72a7a5;
+}
+
+span.empty {
+  color: #72a7a5;
+}
+
+span.offline {
+  color: red;
+  display: none;
+}
   
   section {
     width: 20rem;
